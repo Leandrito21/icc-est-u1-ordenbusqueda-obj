@@ -27,7 +27,7 @@ public class PersonaController {
     public Persona findPersonByCodigo(Persona[] personas, int codigo){
         int bajo = 0;
         int alto = personas.length - 1;
-        while(bajo <= alto){
+        while(bajo >= alto){
             int center = (bajo + alto)/2;
             if(personas[center].equalsByCodigoDireccion(codigo) ){
                 return personas[center];
